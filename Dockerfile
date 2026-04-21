@@ -2,8 +2,8 @@ FROM node:18
 
 WORKDIR /app
 
-COPY backend/ ./backend
-COPY frontend/ ./frontend
+COPY backend/
+COPY frontend/ 
 
 WORKDIR /app/backend
 
