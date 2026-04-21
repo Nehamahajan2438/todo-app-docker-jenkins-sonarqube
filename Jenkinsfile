@@ -12,14 +12,14 @@ pipeline {
         stage('Install Dependencies') {
             steps {
                 dir('backend') {
-                    sh 'npm install'
+                    bat 'npm install'
                 }
             }
         }
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t todo-app .'
+                bat 'docker build -t todo-app .'
             }
         }
 
@@ -34,7 +34,7 @@ pipeline {
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 3000:3000 --name todo-app todo-app'
+                bat 'docker run -d -p 3000:3000 --name todo-app todo-app'
             }
         }
     }
