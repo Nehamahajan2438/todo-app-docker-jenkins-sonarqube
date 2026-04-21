@@ -23,14 +23,14 @@ pipeline {
             }
         }
 
-        stage('Stop Old Container') {
-            steps {
-                sh '''
-                docker ps -q --filter "name=todo-app" | grep -q . && docker stop todo-app || true
-                docker rm todo-app || true
-                '''
-            }
-        }
+        // stage('Stop Old Container') {
+        //     steps {
+        //         sh '''
+        //         docker ps -q --filter "name=todo-app" | grep -q . && docker stop todo-app || true
+        //         docker rm todo-app || true
+        //         '''
+        //     }
+        // }
 
         stage('Run Container') {
             steps {
