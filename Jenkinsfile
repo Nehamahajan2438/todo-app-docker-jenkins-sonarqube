@@ -5,7 +5,7 @@ pipeline {
 
         stage('Clone Code') {
             steps {
-                git 'https://github.com/Nehamahajan2438/todo-app-docker-jenkins-sonarqube.git'
+                git branch: 'main', url: 'https://github.com/Nehamahajan2438/todo-app-docker-jenkins-sonarqube.git'
             }
         }
 
