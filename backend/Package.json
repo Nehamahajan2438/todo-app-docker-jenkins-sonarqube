@@ -1,0 +1,10 @@
+{
+  "name": "To-Do App",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "Neha Mahajan",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  }
+}
